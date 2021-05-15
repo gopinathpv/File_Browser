@@ -13,7 +13,7 @@ File Browser is intended to provide a user a simple UI to explore a file system.
 5. Tried improve filter designs.
 
 # Changes on server Side
-1. Changed where.name_contains to where.name_contains.toLowerCase() for perfect filtering. 
+1. Changed where.name_contains to where.name_contains.toLowerCase() for filtering. 
     - (!tmpEntry?.name.toLowerCase().includes(where.name_contains.toLowerCase()))
 
 
