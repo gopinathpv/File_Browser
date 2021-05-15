@@ -16,5 +16,30 @@ File Browser is intended to provide a user a simple UI to explore a file system.
 1. Changed where.name_contains to where.name_contains.toLowerCase() for filtering. 
     - (!tmpEntry?.name.toLowerCase().includes(where.name_contains.toLowerCase()))
 
-
+# Finding on GraphQL
+ {
+ listEntries(path:"/documents"){
+	pagination{
+    page
+    pageCount
+    prevPage
+    nextPage
+    totalRows
+  }
+  entries{
+   ... on File{
+      id
+      path
+      name
+      size
+      lastModified
+    }
+   ... on Directory{
+       id
+      path
+      name
+    }
+  }
+}
+}
 
