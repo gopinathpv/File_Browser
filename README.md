@@ -7,10 +7,10 @@ File Browser is intended to provide a user a simple UI to explore a file system.
     -  File size ( max) - filter by adding number 
     -  Entry Name - Filter by text 
     -  Entry Type - filter by dropdown
-2. Add Loading and error States
+2. Added Loading and error States
 3. Filter Working through all the directories 
-4. On clicking file will be downloaded.
-5. Tried improve filter designs.
+4. On clicking the file types the file will be downloaded.
+5. Tried improving filter designs.
 
 # Changes on server Side
 1. Changed where.name_contains to where.name_contains.toLowerCase() for filtering. 
